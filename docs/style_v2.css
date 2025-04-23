@@ -1,0 +1,103 @@
+/* 👒 Group 8 | Smart Recipe Finder — Macaron Theme Edition */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fffafc;
+  margin: 0;
+  padding: 2rem;
+  color: #4a4a4a;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ff6b81;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #70a1ff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#ingredient-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#ingredient-list label {
+  background: #ffeaa7;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+#ingredient-list label:hover {
+  background: #fab1a0;
+}
+
+#ingredient-list input[type="checkbox"] {
+  accent-color: #ff6b81;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #ff6b81;
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff4757;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff0f5;
+}
+
+th, td {
+  padding: 0.6rem;
+  text-align: left;
+  border: 1px solid #ffecec;
+}
+
+th {
+  background-color: #ffc0cb;
+  color: #4a4a4a;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer::before {
+  content: "👒 Group 8 | ";
+}
