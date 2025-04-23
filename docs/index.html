@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Recipe Finder</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fef8f5;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #ff6b6b;
+      margin-bottom: 1rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      color: #4a90e2;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .section table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .section table, th, td {
+      border: 1px solid #eee;
+    }
+    th, td {
+      padding: 0.6rem;
+      text-align: left;
+    }
+    th {
+      background-color: #fceeea;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🍳 Smart Recipe Finder</h1>
+
+    <div class="section">
+      <h2>Input</h2>
+      <p><strong>User Ingredients:</strong> ['A', 'B', 'C', 'D', 'E']</p>
+    </div>
+
+    <div class="section">
+      <h2>Hash Map Lookup</h2>
+      <table>
+        <tr><th>Ingredient</th><th>Recipes</th></tr>
+        <tr><td>A</td><td>R1, R2, R3, R4</td></tr>
+        <tr><td>B</td><td>R1, R2, R4, R5</td></tr>
+        <tr><td>C</td><td>R1, R2, R3, R4, R5</td></tr>
+        <tr><td>D</td><td>R1, R3, R4, R5</td></tr>
+        <tr><td>E</td><td>R1, R4, R5</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Recommended Recipes</h2>
+      <table>
+        <tr><th>Recipe</th><th>Missing</th><th>Unused</th><th>Time</th><th>Status</th></tr>
+        <tr><td>R1</td><td>0</td><td>0</td><td>30</td><td>✅ Can Make</td></tr>
+        <tr><td>R5</td><td>0</td><td>1</td><td>20</td><td>✅ Can Make</td></tr>
+        <tr><td>R3</td><td>0</td><td>2</td><td>15</td><td>✅ Can Make</td></tr>
+      </table>
+    </div>
+
+    <div class="footer">
+      <p>Built with 💡 for demo purposes</p>
+    </div>
+  </div>
+</body>
+</html>
