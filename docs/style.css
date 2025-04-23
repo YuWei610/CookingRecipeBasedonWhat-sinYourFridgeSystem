@@ -66,9 +66,15 @@ button:hover {
   background-color: #ff4c4c;
 }
 
+.table-wrapper {
+  overflow-x: auto;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: #fff0f5;
+  min-width: 600px;
 }
 
 th, td {
