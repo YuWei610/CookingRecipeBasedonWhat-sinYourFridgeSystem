@@ -1,47 +1,88 @@
 body {
-      font-family: "Segoe UI", sans-serif;
-      background-color: #fef8f5;
-      margin: 0;
-      padding: 2rem;
-      color: #333;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 2rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
-      color: #ff6b6b;
-      margin-bottom: 1rem;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .section h2 {
-      color: #4a90e2;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .section table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .section table, th, td {
-      border: 1px solid #eee;
-    }
-    th, td {
-      padding: 0.6rem;
-      text-align: left;
-    }
-    th {
-      background-color: #fceeea;
-    }
-    .footer {
-      text-align: center;
-      margin-top: 2rem;
-      color: #aaa;
-    }
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fef8f5;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ff6b6b;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #4a90e2;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#ingredient-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#ingredient-list label {
+  background: #fceeea;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#ingredient-list input[type="checkbox"] {
+  accent-color: #ff6b6b;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4c4c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.6rem;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+th {
+  background-color: #fceeea;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #aaa;
+}
