@@ -1,4 +1,4 @@
-
+console.log("✅ JS loaded!");
 // Ingredient list from your spreadsheet
 const ingredients = [
   "cheddar cheese", "carrot", "egg", "pasta", "chicken breast", "ground beef",
