@@ -51,14 +51,14 @@ form.addEventListener("submit", function(e) {
       status: missing.length === 0 ? "✅ Can Make" : `❗ Missing (${missing.join(", ")})`
     };
   }).sort((a, b) => {
-    return a.missing_count - b.missing_count ||
-           a.unused_count - b.unused_count ||
+    return a.unused_count - b.unused_count ||
+           a.missing_count - b.missing_count ||
            a.time - b.time;
   });
 
   results.forEach(r => {
     const row = document.createElement("tr");
-    row.innerHTML = `<td>${r.name}</td><td>${r.missing_count}</td><td>${r.unused_count}</td><td>${r.time}</td><td>${r.status}</td>`;
+    row.innerHTML = `<td>${r.name}</td><td>${r.unused_count}</td><td>${r.missing_count}</td><td>${r.time}</td><td>${r.status}</td>`;
     tbody.appendChild(row);
   });
 });
